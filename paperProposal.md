@@ -39,10 +39,10 @@ Python code.
 	18. If the implementation is easy to explain, it may be a good idea.
 	19. Namespaces are one honking great idea -- let's do more of those!  
   
-We were suprised at how many people do not know about this valuable coding dogma for the Python language, and
-therefore have selected this topic for our paper and presentation in hopes of enlightening the realm of Python coders.
-There are also poor youTube videos about The Zen of Python and its application, so we were compelled to create one
-of substantial value.  
+We were suprised at how many people are unaware of this valuable coding dogma for the Python language, and  
+therefore have selected this topic for our paper and presentation in hopes of enlightening the realm of Python  
+coders. There are also poor youTube videos about The Zen of Python and its application, so we were compelled to  
+create one of substantial value.  
   
   
 **Body:**  
