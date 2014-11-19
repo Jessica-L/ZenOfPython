@@ -5,14 +5,16 @@
   
 CSCI 3155 Principles of Programming Languages  
   
-Jessica Lynch
-Noah Dillon
+Jessica Lynch  
+Noah Dillon   
 Max Harris  
   
   
 **Intro:**  
   
-On August 19, 2004 Pythoneer Tim Peters' The Zen of Python was approved as Informational PEP 20.  
+On August 19, 2004 Pythoneer Tim Peters' The Zen of Python was approved as Informational PEP 20. While PEP 8 is  
+all about the rules for structuring your code, PEP 20 is all about the inspiration behind how you write your  
+Python code.  
   
 	>>> python
 	>>> import this
@@ -41,14 +43,13 @@ On August 19, 2004 Pythoneer Tim Peters' The Zen of Python was approved as Infor
 We were suprised at how many people do not know about this valuable coding dogma for the Python language, and
 therefore have selected this topic for our paper and presentation in hopes of enlightening the realm of Python coders.
 There are also poor youTube videos about The Zen of Python and its application, so we were compelled to create one
-of substantial value.  While PEP 8 is all about the rules for structuring your code, PEP 20 is all about the
-inspiration behind how you write your Python code. 
+of substantial value.  
   
   
 **Body:**  
   
 How to apply each Zen point  
-We will now expand on each point addressed in The Zen of Python by using examples of rejected and approved PEPs as  
+We will expand on each point addressed in The Zen of Python by using examples of rejected and approved PEPs as  
 well as other examples. NOTE: We will choose examples for an audience whose level of coding is moderate to expert.    
   
   
@@ -60,8 +61,8 @@ Sure, you need to solve a problem, but if you can solve it beautifully, that's e
   
 **Resources:**  
   
-https://www.python.org/dev/peps/pep-0020/
-http://c2.com/cgi/wiki?PythonPhilosophy
-http://docs.python-guide.org/en/latest/writing/style/
-http://python-history.blogspot.com/2009/01/pythons-design-philosophy.html
-https://github.com/Matt-Deacalion/The-Zen-of-Python-Poster
+https://www.python.org/dev/peps/pep-0020/  
+http://c2.com/cgi/wiki?PythonPhilosophy  
+http://docs.python-guide.org/en/latest/writing/style/  
+http://python-history.blogspot.com/2009/01/pythons-design-philosophy.html  
+https://github.com/Matt-Deacalion/The-Zen-of-Python-Poster  
