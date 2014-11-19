@@ -1,6 +1,6 @@
-#The Zen of Python and Its Application#
-
-##Peaceful and Beautiful Code##  
+#The Zen of Python and Its Application  
+  
+##Peaceful and Beautiful Code  
 
   
 CSCI 3155 Principles of Programming Languages  
@@ -10,7 +10,7 @@ Noah Dillon
 Max Harris  
   
   
-**Intro:**  
+**Introduction:**  
   
 On August 19, 2004 Pythoneer Tim Peters' The Zen of Python was approved as Informational PEP 20. While PEP 8 is  
 all about the rules for structuring your code, PEP 20 is all about the inspiration behind how you write your  
