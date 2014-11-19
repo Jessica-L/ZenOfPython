@@ -1,5 +1,4 @@
 #The Zen of Python and Its Application  
-  
 ##Peaceful and Beautiful Code  
 
   
