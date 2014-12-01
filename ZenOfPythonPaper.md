@@ -53,8 +53,8 @@ in the Zen of Python (PEP 20).
 <I'll go into talking about beautiful and simple vs. ugly and complicated using the task of walking a directory tree.>
 
 Resources:
-http://docs.python-guide.org/en/latest/writing/style/
-http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/
-https://www.python.org/doc/essays/foreword/ (Guido van Rossum's original Python Style Guide essay)
-http://neopythonic.blogspot.com/ (Guido's blog)
-http://www.stat.washington.edu/~hoytak/blog/whypython.html
+http://docs.python-guide.org/en/latest/writing/style/  
+http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/  
+https://www.python.org/doc/essays/foreword/ (Guido van Rossum's original Python Style Guide essay)  
+http://neopythonic.blogspot.com/ (Guido's blog)  
+http://www.stat.washington.edu/~hoytak/blog/whypython.html  
