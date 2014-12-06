@@ -118,7 +118,13 @@ Example 2, although a lot more readable due to its simplicity achieved through l
 unnecessary work behind the scenes.  Python's os.walk module is useful to lessen lines of code, but when dealing  
 with big data i.e. millions of lines of code to traverse and analyze, the implementation of this module which uses  
 recursion can be expensive.  
+  
+  
+Example 3:  
+````python  
 
+````  
+  
  
 
 Resources:
