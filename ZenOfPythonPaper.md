@@ -1,5 +1,5 @@
 #The Zen of Python and Its Application  
-###Peaceful and Beautiful Code  
+###Readability Promotes Reusable Code  
 
   
 CSCI 3155 Principles of Programming Languages  
