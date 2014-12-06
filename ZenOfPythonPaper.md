@@ -57,7 +57,8 @@ violates several of the Zen points 1 - 7 and we progressively improve upon this 
 third (best) examples.  
 
 Example 1:  
-''''python
+  
+''''python  
 import os.path as op
 
 def generate_file_list( filepath ):
