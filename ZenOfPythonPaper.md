@@ -50,7 +50,77 @@ Let's focus on statements (1) and (2) because they often bring about statement (
 case of Python are the result of one or more violations of the Python style guidelines (PEP 8) which are summarized  
 in the Zen of Python (PEP 20).  
   
-<I'll go into talking about beautiful and simple vs. ugly and complicated using the task of walking a directory tree.>
+The first seven Zen points of PEP 20 address the beautiful nature of Python code if written well, that is according  
+to the Zen of Python. To illustrate, we will analyze the below code examples based on the task of walking a directory  
+tree containing multiple directories to generate a list of all filepaths of files contained within.  Our first example  
+violates several of the Zen points 1 - 7 and we progressively improve upon this example with our second (better) and  
+third (best) examples.  
+
+Example 1:
+'''python
+
+import os.path as op
+
+def generate_file_list( filepath ):
+   pathList = []
+   path0    = filepath
+   dirList0 = os.listdir( path0 )
+
+   for p0 in dirList0:
+      path1 = op.join( path0, p0 )
+      if op.isdir( path1 ):
+         dirList1 = os.listdir( path1 )
+
+         for p1 in dirList1:
+            path2 = op.join( path1, p1 )
+            if op.isdir( path2 )
+               dirList2 = os.listdir( path2 )
+
+               for p2 in dirList2:
+                  path3 = op.join( path2, p2 )
+                  if op.isdir( path3 ):
+                     dirList3 = os.listdir( path3 )
+
+                     for p3 in dirList3:
+                        path4 = op.join( path3, p3 )
+                        if op.isdir( path4 ):
+                           dirList4 = os.listdir( path4 )
+
+			   for p4 in dirList4:
+                              pathList.append( op.join( path4, p4 ) )
+
+                        else: 
+                          pathList.append( op.join( path3, p3 ) )
+
+                  else:
+                     pathList.append( op.join( path2, p2 ) )
+
+             else:
+                pathList.append( op.join( path1, p1 ) )
+
+      else:
+         pathList.append( op.join( path0, p0 ) )
+
+   return pathList
+                  
+'''
+  
+Example 1, although it may save memory by avoiding recursion, fails to adhere to Zen points 1, 3, 5 and 6, which  
+furthermore, hinders readability and fails to adhere to Zen point 7.  
+  
+  
+Example 2:  
+'''python
+
+'''  
+  
+  
+Example 2, although a lot more readable due to its simplicity achieved through less lines of code, does a lot of  
+unnecessary work behind the scenes.  Python's os.walk module is useful to lessen lines of code, but when dealing  
+with big data i.e. millions of lines of code to traverse and analyze, the implementation of this module which uses  
+recursion can be expensive.  
+
+ 
 
 Resources:
 http://docs.python-guide.org/en/latest/writing/style/  
