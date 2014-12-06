@@ -109,9 +109,9 @@ furthermore, hinders readability and fails to adhere to Zen point 7.
   
   
 Example 2:  
-'''python
+````python  
 
-'''  
+````  
   
   
 Example 2, although a lot more readable due to its simplicity achieved through less lines of code, does a lot of  
