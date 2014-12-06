@@ -57,7 +57,7 @@ violates several of the Zen points 1 - 7 and we progressively improve upon this 
 third (best) examples.  
 
 Example 1:
-'''python  
+'''''python  
 import os.path as op
 
 def generate_file_list( filepath ):
@@ -101,7 +101,7 @@ def generate_file_list( filepath ):
          pathList.append( op.join( path0, p0 ) )
 
    return pathList                 
-'''
+'''''
   
 Example 1, although it may save memory by avoiding recursion, fails to adhere to Zen points 1, 3, 5 and 6, which  
 furthermore, hinders readability and fails to adhere to Zen point 7.  
