@@ -37,14 +37,14 @@ print to the screen unnumbered.
 	19. Namespaces are one honking great idea -- let's do more of those!  
   
 Python according to its creator Guido van Rossum provides a higher level of readability aimed at the creation of  
-reusable code and writes "code can hardly be considered reusable if it's not readable".  In industry, reusable code  
-is coveted to help achieve time and memory efficiency.  Why reinvent code that has already been written?  This is  
-not a hypothetical question.  Here are the main reasons programmers opt to write their own version of pre-existing  
-code:  
+reusable code.  Guido writes in his original Python Style Guide essay, "... code can hardly be considered reusable if  
+it's not readable."  In industry, reusable code is coveted to help achieve time and memory efficiency.  Why reinvent  
+code that has already been written?  This is not a hypothetical question.  Here are the main reasons programmers opt  
+to write their own version of pre-existing code:  
 
-	(1) The code is crap in the eyes of the beholder.  
-	(2) The code is hard to understand even though it is doing its job.  
-	(3) "I'm in too big of a hurry and can code up quickly what I need."  
+	(1) The code (despite doing its job) is badly written -- sloppy, too implicit, etc... or simply put, a hack job!  
+	(2) The code is hard to understand (perhaps, just too complex and/or missing comments) even though it is doing its job.  
+	(3) The programmer is in too big of a hurry and can code up quickly what s/he needs.  
   
 Let's focus on statements (1) and (2) because they often bring about statement (3).  Statements (1) and (2) in the  
 case of Python are the result of one or more violations of the Python style guidelines (PEP 8) which are summarized  
@@ -109,24 +109,50 @@ furthermore, hinders readability and fails to adhere to Zen point 7.
   
   
 Example 2:  
-````python  
+````python 
+import os.path as op
 
+def generate_file_list( filepath ): 
+   pathList = []
+   for root, dirs, files in os.walk( filepath ):
+      for filename in files:
+         pathList.append( op.join(root, filename) )
+      for dir in dirs:
+         generate_file_list( dir )
+   return pathList
 ````  
   
   
-Example 2, although a lot more readable due to its simplicity achieved through less lines of code, does a lot of  
-unnecessary work behind the scenes.  Python's os.walk module is useful to lessen lines of code, but when dealing  
+Example 2 is a lot more readable due to its simplicity achieved through less lines of code.  However, it does a lot  
+of unnecessary work behind the scenes.  Python's os.walk module is useful to lessen lines of code, but when dealing  
 with big data i.e. millions of lines of code to traverse and analyze, the implementation of this module which uses  
 recursion can be expensive.  
   
   
 Example 3:  
 ````python  
+import os.path as op
 
+def generate_file_list( filepath ):
+   pathList = []
+   if op.isdir( filepath ):
+      for p0 in os.listdir( filepath ):
+         path1 = op.join( filepath, p0 )
+         if op.isdir( path1 ):
+            pathList += generate_file_list( path1 )
+         else:
+            pathList.append( path1 )
+   return pathList
 ````  
   
- 
-
+Example 3 is in one way or another beautiful, explicit, simple, flat and sparse, and is therefore readable making it  
+reusable code which adheres to the Zen of Python points 1 through 7.  
+  
+  
+Now, we will move on to briefly explain the remaining Zen of Python points.  
+  
+   
+  
 Resources:
 http://docs.python-guide.org/en/latest/writing/style/  
 http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/  
