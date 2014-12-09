@@ -53,7 +53,7 @@ in the Zen of Python (PEP 20).
   
 The first seven Zen points of PEP 20 address the beautiful nature of Python code if written well, that is according  
 to the Zen of Python. To illustrate, we will analyze the below code examples based on the task of walking a directory  
-tree containing multiple directories to generate a list of all filepaths of files contained within.  Our first example  
+tree containing multiple directories to generate a list of all file paths of files contained within.  Our first example  
 violates several of the Zen points 1 - 7 and we progressively improve upon this example with our second (better) and  
 third (best) examples.  
 
@@ -87,7 +87,7 @@ def generate_file_list( filepath ):
                         if op.isdir( path4 ):
                            dirList4 = os.listdir( path4 )
 
-			   for p4 in dirList4:
+                           for p4 in dirList4:
                               pathList.append( op.join( path4, p4 ) )
 
                         else: 
@@ -127,7 +127,7 @@ def generate_file_list( filepath ):
 Example 2 is a lot more readable due to its simplicity achieved through less lines of code.  However, it does a lot  
 of unnecessary work behind the scenes.  Python's os.walk module is useful to lessen lines of code, but when dealing  
 with big data i.e. millions of lines of code to traverse and analyze, the implementation of this module which uses  
-recursion can be expensive.  
+recursion can be expensive and time consuming.  
   
   
 Example 3:  
