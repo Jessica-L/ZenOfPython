@@ -254,8 +254,8 @@ one best approach may not be obvious at first unless you are Guido van Rossum to
 always find a way to do something but the first thing you think of probably won't be the most efficient.  
   
   
-Zen point 15: "Now is better than never" and 16: "Although never is often better than *right* now" remind us that <MAX  
-FILL IN SOMETHING MEANINGFUL AND APHORISTIC HERE.>  
+Zen point 15: "Now is better than never" and 16: "Although never is often better than *right* now" remind us that <<MAX  
+FILL IN SOMETHING MEANINGFUL AND APHORISTIC HERE.>>  
   
   
 Zen points 16: "If the implementation is hard to explain, it's a bad idea" and 17: "If the implementation is easy to explain,  
