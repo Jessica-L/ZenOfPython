@@ -229,7 +229,24 @@ except( IOError, OSError) as err:
    log_error( err )  
 ````  
   
- 
+  
+Zen point 13 says "There should be one -- and preferably only one -- obvious way to do it." The below examples illustrate both  
+impractical and practical approaches.  
+  
+````python  
+#Bad (impractical) example
+i = 0
+while i < len(array):
+    print array[i]
+    i+=1 
+````  
+  
+````python  
+#Good (practical and obvious) example
+for element in array:
+    print element  
+````  
+
 Resources:
 http://docs.python-guide.org/en/latest/writing/style/  
 http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/  
