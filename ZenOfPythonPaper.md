@@ -8,7 +8,7 @@ Jessica Lynch
 Noah Dillon   
 Max Harris  
 
-Python is highly readable due to its complete set of Style guidelines and Pythonic idioms relayed in detail in the  
+Python is highly readable due to its complete set of style guidelines and Pythonic idioms relayed in detail in the  
 Process Python Enhancement Proposal (PEP) #8, "Style Guide for Python Code" created by GvR, Warsaw and Coghlan in  
 2001.  On August 19, 2004, "The Zen of Python" by Pythoneer Tim Peters was approved as Informational PEP 20. While  
 PEP 8 is all about the rules for structuring your code, PEP 20 conveys the inspiration behind how you write your  
@@ -51,11 +51,12 @@ Let's focus on statements (1) and (2) because they often bring about statement (
 case of Python are the result of one or more violations of the Python style guidelines (PEP 8) which are summarized  
 in the Zen of Python (PEP 20).  
   
-The first seven Zen points of PEP 20 address the beautiful nature of Python code if written well, that is according  
-to the Zen of Python. To illustrate, we will analyze the below code examples based on the task of walking a directory  
-tree containing multiple directories to generate a list of all file paths of files contained within.  Our first example  
-violates several of the Zen points 1 - 7 and we progressively improve upon this example with our second (better) and  
-third (best) examples.  
+The first seven Zen points of PEP 20 address the beautiful nature of Python code if written well, that is, according  
+to the Zen of Python. Beautiful code is achieved through a combination of explicit, simple, sparse and flat attributes  
+to ensure readability and therefore the potential for reusability! To illustrate, we will analyze the below code examples  
+based on the task of walking a directory tree containing multiple directories to generate a list of all file paths of  
+files contained within.  Our first example violates several of the Zen points 1 - 7 and we progressively improve upon  
+this example with our second (better) and third (best) examples.  
 
 Example 1:  
   
@@ -150,10 +151,85 @@ Example 3 is in one way or another beautiful, explicit, simple, flat and sparse,
 reusable code which adheres to the Zen of Python points 1 through 7.  
   
   
-Now, we will move on to briefly explain the remaining Zen of Python points.  
+Zen point 8: "Special cases are not special enough to break the rules" tells us to find another way despite the  
+temptation of hacking together a solution.  The rules are there to provide structure and organization and  
+therefore help to secure efficiency.  Breaking them therefore, as we know, can result in hard-to-read code  
+that cannot be reused. For example, the rejected PEP 315 tried to add the functionality of do while loops to
+Python.  However, the implementation is more complicated and less readable.  
   
-   
+````python
+#Conventional way
+while(True):
+    <setup code>
+    if(<end condition>):
+        break
+    <loop code>
+````  
   
+````python
+#Proposed way
+do:
+   <setup code>
+while(<end condition>):
+   <loop code>
+````  
+  
+One can also argue that if there is already a good way to do something, why implement another way.  This goes against  
+another PEP 20 Zen point that "there should be one -- and preferably only one -- obvious way to do it."  Zen point 9:  
+"Although practicality beats purity", on the other hand, addresses the rare case where the rules can be ignored to  
+ensure a more straight-forward answer.  As is written in PEP 8, “A Foolish Consistency is the Hobgoblin of Little Minds.”  
+Know when to be inconsistent -- sometimes the style guide just doesn't apply. When in doubt, use your best judgment.  
+Look at other examples and decide what looks best. And don't hesitate to ask!  
+  
+  
+Zen point 10: "Errors should never pass silently" and zen point 11: "Unless explicitly silenced" address the significance  
+of implementing error-checking and error-handling in our code.
+  
+````python
+#Good example:
+try:
+    <erroneous code>
+except:
+    try:
+        <fixing code>
+    except:
+         print <error>
+         raise
+````  
+  
+````python
+#Bad example:
+try:
+    <erroneous code>
+except:
+    pass
+````  
+  
+  
+Zen point 12: "In the face of ambiguity, refuse the temptation to guess" means that when something is not clear, look it up  
+and figure it out. Make sure you know and fully comprehend before coming to a conclusion.  In the example below, we  
+illustrate how easily a guess about a try except method can have negative results. When we make assumptions, we risk  
+producing erroneous code.  
+  
+````python  
+#Bad example where the variable err leaks
+try:
+   with open(fn, 'r') as f:
+      lines = list(f)
+except( IOError, OSError), err:
+   log_error( err )  
+````  
+  
+````python  
+#Good example where the variable err no longer leaks
+try:
+   with open(fn, 'r') as f:
+      lines = list(f)
+except( IOError, OSError) as err:
+   log_error( err )  
+````  
+  
+ 
 Resources:
 http://docs.python-guide.org/en/latest/writing/style/  
 http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/  
