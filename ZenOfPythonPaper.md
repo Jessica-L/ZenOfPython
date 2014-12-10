@@ -291,6 +291,11 @@ def easy(maybe):
 ````  
   
   
+The last Zen point 19: "Namespaces are one honking great idea -- let's do more of those!" encourages us to optimize use of  
+namespaces in our Python code.  A namespace is a mapping from names to objects, with the property that there is zero  
+relation between names in different namespaces. They’re usually implemented as Python dictionaries, although this is  
+abstracted away.  
+
 Resources:
 http://docs.python-guide.org/en/latest/writing/style/  
 http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/  
