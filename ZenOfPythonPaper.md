@@ -262,8 +262,8 @@ Zen points 16: "If the implementation is hard to explain, it's a bad idea" and 1
 it may be a good idea" address the importance of writing readable code.  The below examples help illustrate both code  
 that is hard to explain and code that is easy to explain.  The former hinders readability and therefore potential for  
 reusability. However, just because code is easy to explain does not mean it is the obvious solution or even correct. Zen  
-point 17 stresses the importance of checking our work and not settling on the first simple solution before we fully know and  
-comprehend the problem.  
+point 17 stresses the importance of checking our work and not settling on the first simple solution before we fully know  
+and comprehend the problem.  
   
 ````python  
 #Code that is hard to explain
