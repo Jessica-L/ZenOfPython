@@ -230,8 +230,8 @@ except( IOError, OSError) as err:
 ````  
   
   
-Zen point 13 says "There should be one -- and preferably only one -- obvious way to do it." The below examples illustrate both  
-impractical and practical approaches.  
+Zen point 13 says "There should be one -- and preferably only one -- obvious way to do it." The below examples illustrate  
+both impractical and practical approaches.  
   
 ````python  
 #Bad (impractical) example
