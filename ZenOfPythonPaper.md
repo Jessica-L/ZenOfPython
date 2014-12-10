@@ -186,6 +186,14 @@ Zen point 10: "Errors should never pass silently" and zen point 11: "Unless expl
 of implementing error-checking and error-handling in our code.
   
 ````python
+#Bad example:
+try:
+    <erroneous code>
+except:
+    pass
+````  
+  
+````python
 #Good example:
 try:
     <erroneous code>
@@ -196,15 +204,7 @@ except:
          print <error>
          raise
 ````  
-  
-````python
-#Bad example:
-try:
-    <erroneous code>
-except:
-    pass
-````  
-  
+
   
 Zen point 12: "In the face of ambiguity, refuse the temptation to guess" means that when something is not clear, look it up  
 and figure it out. Make sure you know and fully comprehend before coming to a conclusion.  In the example below, we  
