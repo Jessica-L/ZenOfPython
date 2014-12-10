@@ -246,10 +246,56 @@ while i < len(array):
 for element in array:
     print element  
 ````  
+  
+  
+This is a counter to Perl's motto: In your Python code, there should be one "best" way of doing something. However, this  
+one best approach may not be obvious at first unless you are Guido van Rossum to which Zen point 14 eludes, "Although,  
+that way may not be obvious at first unless you're Dutch." "May not be obvious at first" means that you can always find  
+a way to do something but the first thing you think of probably won't be the most efficient.  
+  
+  
+Zen point 15: "Now is better than never" and 16: "Although never is often better than *right* now" remind us that <MAX  
+FILL IN SOMETHING MEANINGFUL AND APHORISTIC HERE.>  
+  
+  
+Zen points 16: "If the implementation is hard to explain, it's a bad idea" and 17: "If the implementation is easy to explain,  
+it may be a good idea" address the importance of writing readable code.  The below examples help illustrate both code that is  
+hard to explain and code that is easy to explain.  The former hinders readability and therefore potential for reusability.  
+However, just because code is easy to explain does not mean it is the obvious solution or even correct. Zen point 17 stresses  
+the importance of checking our work and not settling on the first simple solution before we fully know and comprehend the  
+problem.  
+  
+````python  
+#Code that is hard to explain
+def hard():
 
+    import xml.dom.minidom
+    document = xml.dom.minidom.parseString(
+        '''<menagerie><cat>Fluffers</cat><cat>Cisco</cat></menagerie>''')
+    menagerie = document.childNodes[0]
+    for node in menagerie.childNodes:
+        if node.childNodes[0].nodeValue== 'Cisco' and node.tagName == 'cat':
+            return node
+````  
+  
+````python  
+#Code that is easy to explain
+def easy(maybe):
+
+    import lxml
+    menagerie = lxml.etree.fromstring(
+        '''<menagerie><cat>Fluffers</cat><cat>Cisco</cat></menagerie>''')
+    for pet in menagerie.find('./cat'):
+        if pet.text == 'Cisco':
+            return pet
+````  
+  
+  
 Resources:
 http://docs.python-guide.org/en/latest/writing/style/  
 http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/  
 https://www.python.org/doc/essays/foreword/ (Guido van Rossum's original Python Style Guide essay)  
 http://neopythonic.blogspot.com/ (Guido's blog)  
-http://www.stat.washington.edu/~hoytak/blog/whypython.html  
+http://www.stat.washington.edu/~hoytak/blog/whypython.html
+http://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide  
+http://artifex.org/~hblanks/talks/2011/pep20_by_example.html (Blanks, Hunter)
