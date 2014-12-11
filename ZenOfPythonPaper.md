@@ -293,8 +293,8 @@ def easy(maybe):
   
 The last Zen point 19: "Namespaces are one honking great idea -- let's do more of those!" encourages us to optimize use  
 of namespaces in our Python code.  A namespace is a mapping from names to objects, with the property that there is  
-zero relation between names in different namespaces. In Python, namespaces are defined by the individual modules, and  
-since modules can be contained in hierarchical packages, then name spaces are hierarchical too. They are usually  
+zero relation between names in different namespaces. In Python, namespaces are defined by the individual modules,  
+and since modules can be contained in hierarchical packages, then name spaces are hierarchical too. They are usually  
 implemented as Python dictionaries, although this is abstracted away. Namespaces are typically employed for the  
 purpose of grouping symbols and identifiers around a particular functionality helping to create a higher level of  
 organization while promoting readability and the potential for reusability.  
