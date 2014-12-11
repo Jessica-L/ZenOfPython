@@ -206,8 +206,8 @@ except:
 ````  
 
   
-Zen point 12: "In the face of ambiguity, refuse the temptation to guess" means that when something is not clear, look it up  
-and figure it out. Make sure you know and fully comprehend before coming to a conclusion.  In the example below, we  
+Zen point 12: "In the face of ambiguity, refuse the temptation to guess" means that when something is not clear, look it  
+up and figure it out. Make sure you know and fully comprehend before coming to a conclusion.  In the example below, we  
 illustrate how easily a guess about a try except method can have negative results. When we make assumptions, we risk  
 producing erroneous code.  
   
