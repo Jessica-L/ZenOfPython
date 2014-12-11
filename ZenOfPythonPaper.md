@@ -293,14 +293,43 @@ def easy(maybe):
   
 The last Zen point 19: "Namespaces are one honking great idea -- let's do more of those!" encourages us to optimize use  
 of namespaces in our Python code.  A namespace is a mapping from names to objects, with the property that there is  
-zero relation between names in different namespaces. They are usually implemented as Python dictionaries, although  
-this is abstracted away.  
-
+zero relation between names in different namespaces. In Python, namespaces are defined by the individual modules,  
+and since modules can be contained in hierarchical packages, then name spaces are hierarchical too. They are  
+usually implemented as Python dictionaries, although this is abstracted away. Namespaces are typically employed  
+for the purpose of grouping symbols and identifiers around a particular functionality helping to create a higher  
+level of organization while promoting readability and the potential for reusability.  
+  
+In general when a module is imported then the names defined in the module are defined via that module's name space,  
+and are accessed in from the calling modules by using the fully qualified name.  
+````python  
+# assume moduleA defines two functions : func1() and func2() and one class : class1
+import moduleA
+ 
+moduleA.func1()
+moduleA.func2()
+a = moduleA.class1()
+````  
+  
+The "from ... import ..." can be used to insert the relevant names directly into the calling module's namespace,  
+and those names can be accessed from the calling module without the qualified name as shown below. However, you  
+risk overwriting any pre-existing names with no warning.  In order to avoid this, apply an alias by using from  
+module import name as nickname as shown below.  
+  
+````python  
+# assume moduleA defines two functions : func1() and func2() and one class : class1
+from moduleA import func1 as f1
+ 
+func1()
+func2() # this will fail as an undefined name, as will the full name moduleA.func2()
+a = class1() # this will fail as an undefined name, as will the full name moduleA.class1()
+````  
+  
+  
 Resources:
 http://docs.python-guide.org/en/latest/writing/style/  
 http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/  
 https://www.python.org/doc/essays/foreword/ (Guido van Rossum's original Python Style Guide essay)  
 http://neopythonic.blogspot.com/ (Guido's blog)  
-http://www.stat.washington.edu/~hoytak/blog/whypython.html
+http://www.stat.washington.edu/~hoytak/blog/whypython.html  
 http://www.toptal.com/python/python-class-attributes-an-overly-thorough-guide  
-http://artifex.org/~hblanks/talks/2011/pep20_by_example.html (Blanks, Hunter)
+http://artifex.org/~hblanks/talks/2011/pep20_by_example.html (Blanks, Hunter)  
