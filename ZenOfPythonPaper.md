@@ -4,9 +4,9 @@
   
 CSCI 3155 Principles of Programming Languages  
   
-*Jessica Lynch*  
-*Noah Dillon*   
-*Max Harris*  
+**Jessica Lynch**  
+**Noah Dillon**   
+**Max Harris**  
   
 ******************************************************************************************************************  
   
