@@ -254,8 +254,11 @@ one best approach may not be obvious at first unless you are Guido van Rossum to
 always find a way to do something but the first thing you think of probably won't be the most efficient.  
   
   
-Zen point 15: "Now is better than never" and 16: "Although never is often better than *right* now" remind us that MAX  
-FILL IN SOMETHING MEANINGFUL AND APHORISTIC HERE.  
+Zen point 15: "Now is better than never" and 16: "Although never is often better than *right* now" remind us that  
+sometimes a working but less than eloquent solution needs implemented immediately with plans to update and refactor it  
+later.  However, when this is done, precautions need taken to ensure the robustness of the code being implemented.  
+Adequate testing needs applied and so forth to catch any and all bugs. Follow through with updating and refactoring
+must be carried out to comply with the principles of code design. 
   
   
 Zen points 16: "If the implementation is hard to explain, it's a bad idea" and 17: "If the implementation is easy to explain,  
@@ -323,6 +326,13 @@ func1()
 func2() # this will fail as an undefined name, as will the full name moduleA.func2()
 a = class1() # this will fail as an undefined name, as will the full name moduleA.class1()
 ````  
+  
+  
+In conclusion, the hallmark of Python design guidelines addressed in detail in PEP 8 and in a summarized version  
+in PEP 20 is the promotion of reusable code by ensuring readability. We can combine various attributes of beautiful  
+code and good coding practices to achieve readability which facilitates the developer's understanding of the code  
+being reused. The promotion of code reuse can decrease resource constrain, strengthen communication among  
+engineering teams, and increase productivity.  Such benefits should inspire all programmers to write beautiful code.  
   
   
 Resources:
