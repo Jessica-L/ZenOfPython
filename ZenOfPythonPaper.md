@@ -2,7 +2,7 @@
 ###Readability Promotes Reusable Code  
 
   
-CSCI 3155 Principles of Programming Languages  
+**CSCI 3155 Principles of Programming Languages**  
   
 **Jessica Lynch**  
 **Noah Dillon**   
