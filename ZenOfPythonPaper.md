@@ -155,10 +155,10 @@ reusable code which adheres to the Zen of Python points 1 through 7.
   
   
 Zen point 8: "Special cases are not special enough to break the rules" tells us to find another way despite the  
-temptation of hacking together a solution.  The rules are there to provide structure and organization and  
-therefore help to secure efficiency.  Breaking them therefore, as we know, can result in hard-to-read code  
-that cannot be reused. For example, the rejected PEP 315 tried to add the functionality of do while loops to
-Python.  However, the implementation is more complicated and less readable.  
+temptation of hacking together a solution.  The rules are there to provide structure and organization and therefore  
+help to secure efficiency.  Breaking them therefore, as we know, can result in hard-to-read code that cannot be  
+reused. For example, the rejected PEP 315 tried to add the functionality of do while loops to Python.  However,  
+the implementation is more complicated and less readable.  
   
 ````python
 #Conventional way
