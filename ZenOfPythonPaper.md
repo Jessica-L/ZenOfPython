@@ -44,7 +44,7 @@ to write their own version of pre-existing code:
 
 	(1) The code (despite doing its job) is badly written, or in other words, is a hack job!  
 	(2) The code is hard to understand (perhaps, just too complex and/or missing comments) even though it is  
-            doing its job.  
+        doing its job.  
 	(3) The programmer is in too big of a hurry and can code up quickly what s/he needs.  
   
 Let's focus on statements (1) and (2) because they often bring about statement (3).  Statements (1) and (2) in the  
