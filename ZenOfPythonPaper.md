@@ -42,7 +42,7 @@ it's not readable."  In industry, reusable code is coveted to help achieve time 
 code that has already been written?  This is not a hypothetical question.  Here are the main reasons programmers opt  
 to write their own version of pre-existing code:  
 
-	(1) The code (despite doing its job) is badly written -- sloppy, too implicit, etc... or simply put, a hack job!  
+	(1) The code (despite doing its job) is badly written -- sloppy or in other words, a hack job!  
 	(2) The code is hard to understand (perhaps, just too complex and/or missing comments) even though it is doing  
             its job.  
 	(3) The programmer is in too big of a hurry and can code up quickly what s/he needs.  
