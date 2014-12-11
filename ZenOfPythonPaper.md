@@ -335,6 +335,9 @@ being reused. The promotion of code reuse can decrease resource constrain, stren
 engineering teams, and increase productivity.  Such benefits should inspire all programmers to write beautiful code.  
   
   
+  
+******************************************************************************************************************  
+  
 Resources:
 http://docs.python-guide.org/en/latest/writing/style/  
 http://ruben.verborgh.org/blog/2013/02/21/programming-is-an-art/  
