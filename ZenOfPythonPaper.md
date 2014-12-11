@@ -9,12 +9,12 @@ Noah Dillon
 Max Harris  
 
 Python is highly readable due to its complete set of style guidelines and Pythonic idioms relayed in detail in the  
-Process Python Enhancement Proposal (PEP) #8, "Style Guide for Python Code" created by GvR, Warsaw and Coghlan in  
-2001.  On August 19, 2004, "The Zen of Python" by Pythoneer Tim Peters was approved as Informational PEP 20. While  
-PEP 8 is all about the rules for structuring your code, PEP 20 conveys the inspiration behind how you write your  
-Python code. You can access The Zen of Python by visiting https://www.python.org/dev/peps/pep-0020 or via the Python  
-terminal or command prompt by typing >>import this and pressing Enter.  The below list of Python Zen points will  
-print to the screen unnumbered.  
+Process Python Enhancement Proposal (PEP) #8, "Style Guide for Python Code" created by GvR, Warsaw and Coghlan  
+in 2001.  On August 19, 2004, "The Zen of Python" by Pythoneer Tim Peters was approved as Informational PEP 20.  
+While PEP 8 is all about the rules for structuring your code, PEP 20 conveys the inspiration behind how you write  
+your Python code. You can access The Zen of Python by visiting https://www.python.org/dev/peps/pep-0020 or via the  
+Python terminal or command prompt by typing >>import this and pressing Enter.  The below list of Python Zen points  
+will print to the screen unnumbered.  
   
 	1. Beautiful is better than ugly.  
 	2. Explicit is better than implicit.  
