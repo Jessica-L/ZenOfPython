@@ -57,10 +57,10 @@ to ensure readability and therefore the potential for reusability! To illustrate
 based on the task of walking a directory tree containing multiple directories to generate a list of all file paths of  
 files contained within.  Our first example violates several of the Zen points 1 - 7 and we progressively improve upon  
 this example with our second (better) and third (best) examples.  
-
-Example 1:  
   
-````python  
+  
+````python 
+#Example 1: 
 import os.path as op
 
 def generate_file_list( filepath ):
@@ -110,8 +110,8 @@ Example 1, although it may save memory by avoiding recursion, fails to adhere to
 furthermore, hinders readability and fails to adhere to Zen point 7.  
   
   
-Example 2:  
-````python 
+````python  
+#Example 2:
 import os.path as op
 
 def generate_file_list( filepath ): 
@@ -131,8 +131,8 @@ big data i.e. millions of lines of code to traverse and analyze, the implementat
 recursion can be expensive and time consuming.  
   
   
-Example 3:  
 ````python  
+#Example 3:
 import os.path as op
 
 def generate_file_list( filepath ):
