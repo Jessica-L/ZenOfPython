@@ -125,9 +125,9 @@ def generate_file_list( filepath ):
 ````  
   
   
-Example 2 is a lot more readable due to its simplicity achieved through less lines of code.  However, it does a lot  
-of unnecessary work behind the scenes.  Python's os.walk module is useful to lessen lines of code, but when dealing  
-with big data i.e. millions of lines of code to traverse and analyze, the implementation of this module which uses  
+Example 2 is a lot more readable due to its simplicity achieved through less lines of code.  However, it does a lot of  
+unnecessary work behind the scenes.  Python's os.walk module is useful to lessen lines of code, but when dealing with  
+big data i.e. millions of lines of code to traverse and analyze, the implementation of this module which uses  
 recursion can be expensive and time consuming.  
   
   
