@@ -4,10 +4,13 @@
   
 CSCI 3155 Principles of Programming Languages  
   
-Jessica Lynch  
-Noah Dillon   
-Max Harris  
-
+***Jessica Lynch  
+***Noah Dillon   
+***Max Harris  
+  
+******************************************************************************************************************  
+  
+  
 Python is highly readable due to its complete set of style guidelines and Pythonic idioms relayed in detail in the  
 Process Python Enhancement Proposal (PEP) #8, "Style Guide for Python Code" created by GvR, Warsaw and Coghlan  
 in 2001.  On August 19, 2004, "The Zen of Python" by Pythoneer Tim Peters was approved as Informational PEP 20.  
